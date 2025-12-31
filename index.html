@@ -79,6 +79,87 @@ footer{
 
 <div class="section">
 <div class="games">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Casino Suwir</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  margin:0;
+  font-family:'Segoe UI',Arial;
+  background:radial-gradient(circle at top,#140021,#000);
+  color:#fff;
+}
+
+/* HEADER */
+header{
+  text-align:center;
+  padding:18px;
+  font-size:24px;
+  font-weight:bold;
+  color:#ffd700;
+  background:#000;
+  text-shadow:
+    0 0 10px #ffd700,
+    0 0 20px #ff00ff;
+  box-shadow:0 0 30px #ff00ff;
+}
+
+/* SECTION */
+.section{
+  padding:16px;
+}
+
+/* GRID */
+.games{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+}
+
+/* CARD NEON */
+.card{
+  background:linear-gradient(145deg,#1a002a,#050008);
+  border-radius:18px;
+  padding:14px;
+  text-align:center;
+  cursor:pointer;
+  box-shadow:
+    0 0 8px #ff00ff,
+    inset 0 0 8px rgba(255,255,255,.1);
+  transition:.25s ease;
+}
+
+.card:hover{
+  transform:scale(1.1);
+  box-shadow:
+    0 0 15px #ff00ff,
+    0 0 30px #00ffff;
+}
+
+.card img{
+  width:100%;
+  border-radius:12px;
+  margin-bottom:6px;
+}
+
+footer{
+  text-align:center;
+  padding:14px;
+  font-size:12px;
+  opacity:.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>🎰 CASINO SUWIR</header>
+
+<div class="section">
+<div class="games">
 <div class="card" onclick="go()">
   <img src="https://i.imgur.com/8Km9tLL.png">
   <div>Mahjong</div>
@@ -95,6 +176,34 @@ footer{
 <script>
 function go(){
   alert("Demo Game");
+}
+</script>
+
+</body>
+</html>
+.card img{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:8px;
+}
+
+
+<div class="card" onclick="go()">
+  <img src="https://i.imgur.com/1ZQZ1Zm.png">
+  <div>Spaceman</div>
+</div>
+
+</div>
+</div>
+
+<script>
+function go(){
+<script>
+function go(url){
+  window.location.href = url;
+}
+</script>
+
 }
 </script>
 
