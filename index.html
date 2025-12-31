@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Casino Suwir</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background:#111;color:white;text-align:center">
+
+<h1 style="color:gold;">🎰 CASINO SUWIR</h1>
+<p>Slot Demo Entertainment</p>
+
+<h3>Saldo Demo</h3>
+<h2 id="saldo">10000</h2>
+
+<button onclick="deposit()">➕ DEPOSIT</button>
+
+<h3>Lobby Game</h3>
+<button>🎴 Mahjong 1</button><br><br>
+<button>🎴 Mahjong 2</button><br><br>
+<button>🚀 Spaceman</button>
+
+<script>
+let saldo = localStorage.getItem("saldo") || 10000;
+document.getElementById("saldo").innerText = saldo;
+
+function deposit(){
+ let n = prompt("Masukkan nominal deposit (DEMO)");
+ if(!n) return;
+ saldo = Number(saldo) + Number(n);
+ localStorage.setItem("saldo", saldo);
+ document.getElementById("saldo").innerText = saldo;
+}
+</script>
+
+</body>
+</html>
+
